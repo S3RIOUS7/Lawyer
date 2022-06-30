@@ -1,0 +1,131 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+body{
+    margin: 0px;
+}
+header h3{
+    display: block;
+    margin-left: 200px;
+    font-size: 25px;
+}
+.menu{
+    font-family: 'Cairo', sans-serif;
+    display: block;
+    margin: 0px 170px 0px 0px;
+   
+}
+.menu ul,
+.menu ol{
+    list-style: none;
+}
+.menu ul{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+}
+.menu ul li a{
+    display: block;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 15px 30px 15px 30px;
+}
+.menu li a:hover{
+    border-bottom:4px solid #e8bf5d ;
+}
+
+.front_page{
+    background-image: url(../Img/Adam_su.png);
+    margin-top: 10px;
+    height: 840px;
+    display: flex;
+    /* align-items: center; */
+}
+.con_btn{
+    width: 180px;
+    height: 55px;
+    background-color: #e8bf5d;
+    border: none;
+    border-radius: 25px;
+    position: relative;
+    margin-top: 635px;
+    margin: 635px 0px 120px 410px;
+}
+.con_btn:hover{
+    cursor: pointer;
+}
+.front{
+    border-left:2px solid #e8bf5d; 
+    flex-direction: column;
+    display: inline-block;
+    color: #ffffff; 
+    position: relative;
+    margin:610px 0px 120px 410px;
+
+    padding-left: 20px;
+    padding-top: 22px;
+    padding-bottom: -5px;
+    
+}
+.front p1{
+    line-height: 1.8em;
+}
+.first{
+    height: 510px;
+    margin: 30px 230px 0px 350px;
+    position: relative;
+    
+}
+.first_text{
+    display: flex;
+    flex-direction: row;
+
+}
+.history{
+    width: 50%;
+}
+.about_us{
+    width: 800px;
+    border-left: 3px solid #e8bf5d ;
+}
+.about_us h2{
+    padding: 0px 0px 0px 25px;
+    
+}
+.about_us p{
+    padding: 0px 0px 0px 25px;
+    margin-top: 0px;
+}
+.years{
+    margin: 20px 0px 10px 0px;
+    display: flex;
+    width: 100%;
+    
+}
+.years h3{
+    padding:5px 0px 0px 0px;
+}
+.years p3{
+    padding: 15px 0px 0px 15px;
+    line-height: 1em;
+}
+.expertise{
+    width: 35%;
+    padding: 0px 0px 0px 30px;
+
+}
+.first_num{
+    color: #f3f3f3;
+    font-family: 'Cairo', sans-serif;
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: 30px;
+    line-height: 0px;
+    opacity: 0.1;
+}
