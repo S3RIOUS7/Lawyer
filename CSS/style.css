@@ -76,25 +76,29 @@ header h3{
     line-height: 1.8em;
 }
 .first{
-    height: 510px;
-    margin: 30px 230px 0px 350px;
+    height: 540px;
+    margin: 30px 300px 0px 350px;
     position: relative;
     
 }
 .first_text{
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
 
 }
 .history{
     width: 50%;
 }
+
+
 .about_us{
     width: 800px;
     border-left: 3px solid #e8bf5d ;
 }
 .about_us h2{
     padding: 0px 0px 0px 25px;
+    margin-top: 0px;
     
 }
 .about_us p{
@@ -109,15 +113,16 @@ header h3{
 }
 .years h3{
     padding:5px 0px 0px 0px;
+    width: 20%;
 }
 .years p3{
-    padding: 15px 0px 0px 15px;
+    margin-left: 20px;
+    padding: 10px 0px 0px 15px;
     line-height: 1em;
 }
 .expertise{
-    width: 35%;
+    width: 40%;
     padding: 0px 0px 0px 30px;
-
 }
 .first_num{
     color: #f3f3f3;
@@ -129,3 +134,137 @@ header h3{
     line-height: 0px;
     opacity: 0.1;
 }
+.second{
+    height: 750px;
+    background-color: #111111; 
+}
+.second_area{
+    margin: 0px 350px 0px 350px;
+    position: relative;
+    padding-top: 20px;
+}
+.second .about_us{
+    color: white;
+    margin-top: 35px;   
+}
+.second_text_icon{
+    display: flex;
+    width: 40%;
+    justify-content: flex-end;
+    color: white;
+    margin: 0px 0px 0px 80px;   
+}
+.second_text_icon p{
+   padding: 0px 30px 0px 30px;
+}
+.second_text_icon img{
+    height: min-content;
+
+   padding-top: 35px;   
+}
+.second_text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    position: relative;
+}
+.second_area .first_num{
+    padding-top:40px;
+}
+.third{
+    height: 720px;
+}
+.third .about_us{
+    margin-top: 35px;  
+}
+.face_total{
+    display: flex;
+    margin-top:40px ;
+}
+.face{
+    margin: 20px 20px 20px 0px;
+}
+.fourth{
+    height: 750px;
+    background-image:url(/Img/background_04.png);
+    
+}
+.fourth .about_us{
+    margin-top: 35px;  
+}
+.boy_smile{
+    
+    position: relative;
+    z-index: 1;
+    width: 40%;
+}
+.gold_box{
+    height: 300px ;
+    width: 370px;
+    border: none;
+    background: #e8bf5d;
+    z-index: -1;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    
+}
+.practice{
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    justify-content: space-between;
+}
+.practice_text{
+    margin: 0;
+    color: white;
+    padding: 0px 0px 0px 30px;
+    position: relative;
+    width: 55%;
+
+}
+
+.practice_text p{
+    padding-bottom: 30px;
+}
+.practice_text::before{
+    content: "\201C"; 
+    font-family: serif;
+    position: absolute;
+    left: -29px;
+    top: 5px;
+    color: #535251;
+    font-size: 80px;
+    
+}
+.slide{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    margin-top: 30px;
+   
+}
+.slide:first-of-type{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+.slide input{
+     
+    appearance: none;  
+
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+
+   border: 2px solid #999; 
+   transition: 0.2s all linear; 
+     margin-right: 5px; 
+
+  position: relative;
+  top: 4px;
+}
+.slide input:checked {
+     border: 10px solid white; 
+  }
