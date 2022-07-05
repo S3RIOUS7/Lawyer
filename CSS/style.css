@@ -25,18 +25,22 @@ header h3{
     display: flex;
     justify-content: center;
     margin: 0px;
-    padding: 0px;
+    padding: 0px; 
 }
+
 .menu ul li a{
     display: block;
     text-transform: uppercase;
     color: black;
     text-decoration: none;
     font-size: 15px;
-    padding: 15px 30px 15px 30px;
+    padding: 15px 30px 15px 30px;  
+    
 }
+
 .menu li a:hover{
-    border-bottom:4px solid #e8bf5d ;
+    border-bottom: 4px solid #e8bf5d ;
+    padding: 15px 30px 11px 30px;
 }
 
 .front_page{
@@ -58,6 +62,7 @@ header h3{
 }
 .con_btn:hover{
     cursor: pointer;
+    background-color: wheat;
 }
 .front{
     border-left:2px solid #e8bf5d; 
@@ -268,3 +273,138 @@ header h3{
 .slide input:checked {
      border: 10px solid white; 
   }
+.fifth{
+    height: 1000px;
+    
+}
+.fifth .about_us{
+    margin-top: 35px;  
+}
+.fifth_text{
+    display: block;
+    width: 33%;
+    padding: 20px 20px 20px 0px;
+}
+.fifth_total{
+    width: 100%;
+    display: flex; 
+    margin-top: 50px;
+    
+}
+table.lrtext {
+    width: 100%;
+    border-spacing: 0;
+}
+table.lrtext td {
+    width: 50%; 
+    vertical-align: top;
+}
+td.rtext{
+    text-align: right;
+}
+
+.comments ul,
+.comments ol{
+    list-style: none;
+}
+.comments ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px; 
+    border-bottom: 3px solid #e8bf5d
+}
+
+.comments ul li a{
+    display: block;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 15px 0px 15px 0px;  
+   
+}
+.sixth{
+    height: 750px;
+    background-color: #111111;
+}
+.sixth .about_us{
+    margin-top: 35px;  
+}
+.sixth_total ul li a{
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+}
+.sixth_total ul li a:hover{
+    color: #e8bf5d;
+}
+.sixth_total{
+    width: 55%;
+    
+}
+.six_gold_box{
+    width: 40%;
+    background-color: #e8bf5d;
+    padding: 30px 30px 30px 30px;
+    margin-left:30px ;
+    line-height: 1.8em;
+}
+.six{
+    display: flex;
+    margin-top: 100px;
+}
+.seventh{
+    height: 820px;
+}
+
+.mail_text input{
+    border: none;
+    width: 40%;
+    font-style: italic;
+    border-bottom: 1px solid #b9b9b9;
+     height: 20px;  
+}
+.mail_text1 input{
+    border: none;
+    width: 40%;
+    font-style: italic;
+    border-bottom: 1px solid #b9b9b9;
+    height: 70px;
+}
+
+
+.mail_text input:focus::-webkit-input-placeholder {color: transparent}
+.mail_text1 input:focus::-webkit-input-placeholder {color: transparent}
+
+.mail_text{
+    margin: 10px 0px 15px 0px;
+}
+.seven{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.seven_box{
+    width: 50%;
+}
+.seven_btn{
+        width: 180px;
+        height: 55px;
+        background-color: #e8bf5d;
+        border: none;
+        border-radius: 25px;
+        position: relative;
+        font: bold;
+        margin-top: 35px;
+ }
+.seven_btn:hover{
+        cursor: pointer;
+        background-color: wheat;
+ }
+.map{
+    
+        position: relative;
+        z-index: 1;
+        width: 40%;
+}
