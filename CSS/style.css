@@ -355,37 +355,46 @@ td.rtext{
     margin-top: 100px;
 }
 .seventh{
-    height: 820px;
+    height: 750px;
 }
 
 .mail_text input{
     border: none;
-    width: 40%;
+    width: 100%;
     font-style: italic;
     border-bottom: 1px solid #b9b9b9;
      height: 20px;  
+     margin-top: 10px;
+    
+    
 }
 .mail_text1 input{
+
     border: none;
-    width: 40%;
+     width: 100%; 
     font-style: italic;
     border-bottom: 1px solid #b9b9b9;
     height: 70px;
 }
-
-
 .mail_text input:focus::-webkit-input-placeholder {color: transparent}
 .mail_text1 input:focus::-webkit-input-placeholder {color: transparent}
 
-.mail_text{
-    margin: 10px 0px 15px 0px;
-}
+
 .seven{
     display: flex;
-    width: 100%;
-    justify-content: space-between;
+    width: 70%;
+    justify-content: flex-end;
+    margin-top: 50px;
+    /* border:1px solid black; */
+    margin-left: 150px;
+    box-shadow: 5px 5px 5px 5px #f3f3f3;
+
 }
 .seven_box{
+    display: block;
+    padding: 0px 20px 0px 50px;
+    padding-top: 80px;
+   
     width: 50%;
 }
 .seven_btn{
@@ -396,15 +405,74 @@ td.rtext{
         border-radius: 25px;
         position: relative;
         font: bold;
-        margin-top: 35px;
+        bottom: 0px;
+        margin-top: 100px;
+        margin-bottom: 20px;
  }
 .seven_btn:hover{
         cursor: pointer;
         background-color: wheat;
  }
-.map{
-    
+.map{ 
         position: relative;
         z-index: 1;
-        width: 40%;
+        width: 50%;
+}
+.gold_box1{
+    height: 370px ;
+    width: 370px;
+    border: none;
+    background: #e8bf5d;
+    z-index: -1;
+    position: absolute;
+    top: 15px;
+    right: -170px;
+}
+.seven_map{
+    padding: 20px 30px 0px 30px;
+}
+.seventh .about_us{
+    margin-top: 35px;  
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #111111;
+}
+footer h3{
+    display: block;
+    margin-left: 350px;
+    font-size: 25px;
+}
+.fotmenu{
+    font-family: 'Cairo', sans-serif;
+    display: block;
+    margin: 0px 350px 0px 0px;
+   
+}
+.fotmenu ul,
+.fotmenu ol{
+    list-style: none;
+}
+.fotmenu ul{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px; 
+}
+
+.fotmenu ul li a{
+    display: block;
+    text-transform: uppercase;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 5px 10px 5px 10px;
+   
+    
+}
+.fotmenu ul li a:hover{
+    color: #e8bf5d;
 }
