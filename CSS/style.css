@@ -8,14 +8,13 @@ body{
 }
 header h3{
     display: block;
-    margin-left: 200px;
+    margin-left: 200px; 
     font-size: 25px;
 }
 .menu{
     font-family: 'Cairo', sans-serif;
-    display: block;
-    margin: 0px 170px 0px 0px;
-   
+     display: block; 
+    margin: 0px 170px 0px 0px; 
 }
 .menu ul,
 .menu ol{
@@ -36,7 +35,11 @@ header h3{
     font-size: 15px;
     padding: 15px 30px 15px 30px;  
     
+}.menu ul li a i{
+    visibility: hidden;
+    width: 0%;
 }
+
 
 .menu li a:hover{
     border-bottom: 4px solid #e8bf5d ;
@@ -45,10 +48,21 @@ header h3{
 
 .front_page{
     background-image: url(../Img/Adam_su.png);
+     /* background-size:100%  auto;  */
+    background-repeat: no-repeat;
+    background-position: center;
     margin-top: 10px;
     height: 840px;
+    max-height: 840px;
     display: flex;
-    /* align-items: center; */
+     align-items: flex-end; 
+    justify-content: space-between;
+    position: relative;
+    /* margin: 0px 350px 0px 350px; */
+    
+}
+.contact_btn{
+    justify-content: flex-end;
 }
 .con_btn{
     width: 180px;
@@ -56,49 +70,54 @@ header h3{
     background-color: #e8bf5d;
     border: none;
     border-radius: 25px;
-    position: relative;
-    margin-top: 635px;
-    margin: 635px 0px 120px 410px;
+    margin-right: 200px;
+    margin-bottom: 80px;
 }
 .con_btn:hover{
     cursor: pointer;
     background-color: wheat;
 }
+
 .front{
     border-left:2px solid #e8bf5d; 
-    flex-direction: column;
-    display: inline-block;
     color: #ffffff; 
-    position: relative;
-    margin:610px 0px 120px 410px;
+    width: 50%;
+    display: block;
+    margin: 0px 0px 60px 400px;
+}
+.front > h2{
+    font-size: 72px;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+.front > p{
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 50px
+    ;font-family: 'Cairo', sans-serif;
+    line-height: 0.8em;
+}
 
-    padding-left: 20px;
-    padding-top: 22px;
-    padding-bottom: -5px;
-    
-}
-.front p1{
-    line-height: 1.8em;
-}
-.first{
-    height: 540px;
-    margin: 30px 300px 0px 350px;
-    position: relative;
-    
-}
+    .first{ 
+        
+        max-height: 100%;
+        margin: 30px 300px 0px 350px;
+        position: relative;
+    }
 .first_text{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-
+    justify-content: space-between;
+    padding-bottom: 50px;
 }
 .history{
     width: 50%;
 }
-
-
 .about_us{
-    width: 800px;
+   
     border-left: 3px solid #e8bf5d ;
 }
 .about_us h2{
@@ -117,16 +136,21 @@ header h3{
     
 }
 .years h3{
-    padding:5px 0px 0px 0px;
+    margin: 5px 0px 5px 5px;
+    padding:10px 0px 0px 0px;
     width: 20%;
+    letter-spacing: 2px;
+    display: inline-block;
+    
 }
 .years p3{
-    margin-left: 20px;
+    width: 80%;
     padding: 10px 0px 0px 15px;
     line-height: 1em;
+    text-align:inherit;
 }
 .expertise{
-    width: 40%;
+    width: 45%;
     padding: 0px 0px 0px 30px;
 }
 .first_num{
@@ -138,10 +162,12 @@ header h3{
     left: 30px;
     line-height: 0px;
     opacity: 0.1;
+    
 }
-.second{
-    height: 750px;
-    background-color: #111111; 
+
+.second{ 
+    max-height: 100%;
+    background-color: #111111;   
 }
 .second_area{
     margin: 0px 350px 0px 350px;
@@ -172,12 +198,13 @@ header h3{
     flex-wrap: wrap;
     justify-content: flex-end;
     position: relative;
+    padding-bottom:50px ;
 }
 .second_area .first_num{
     padding-top:40px;
 }
 .third{
-    height: 720px;
+   max-height: 100%;
 }
 .third .about_us{
     margin-top: 35px;  
@@ -185,13 +212,22 @@ header h3{
 .face_total{
     display: flex;
     margin-top:40px ;
+    
 }
 .face{
     margin: 20px 20px 20px 0px;
 }
+.face_text{
+    padding-bottom: 60px;
+    width: 25%;
+    margin: 0px 0px 20px 0px;
+}
 .fourth{
-    height: 750px;
+    max-height: 100%;
     background-image:url(/Img/background_04.png);
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    
     
 }
 .fourth .about_us{
@@ -201,7 +237,7 @@ header h3{
     
     position: relative;
     z-index: 1;
-    width: 40%;
+    width: 50%;
 }
 .gold_box{
     height: 300px ;
@@ -247,6 +283,7 @@ header h3{
    justify-content: center;
    align-items: center;
     margin-top: 30px;
+    padding-bottom: 60px;
    
 }
 .slide:first-of-type{
@@ -274,21 +311,28 @@ header h3{
      border: 10px solid white; 
   }
 .fifth{
-    height: 1000px;
+    max-height: 100%;
     
+}
+.fifth_img img{
+   width: 100%;
+   
 }
 .fifth .about_us{
     margin-top: 35px;  
 }
 .fifth_text{
+    /* flex-wrap: wrap; */
     display: block;
-    width: 33%;
-    padding: 20px 20px 20px 0px;
+    width: 30%;
+    padding: 20px 20px 70px 0px;
 }
+
 .fifth_total{
     width: 100%;
     display: flex; 
     margin-top: 50px;
+    flex-wrap: wrap;
     
 }
 table.lrtext {
@@ -325,7 +369,7 @@ td.rtext{
    
 }
 .sixth{
-    height: 750px;
+    max-height: 100%;
     background-color: #111111;
 }
 .sixth .about_us{
@@ -353,9 +397,10 @@ td.rtext{
 .six{
     display: flex;
     margin-top: 100px;
+    padding-bottom: 100px;
 }
 .seventh{
-    height: 750px;
+    max-height: 100%;
 }
 
 .mail_text input{
@@ -388,6 +433,7 @@ td.rtext{
     /* border:1px solid black; */
     margin-left: 150px;
     box-shadow: 5px 5px 5px 5px #f3f3f3;
+    margin-bottom: 50px;
 
 }
 .seven_box{
@@ -419,6 +465,7 @@ td.rtext{
         width: 50%;
 }
 .gold_box1{
+    size: 100%;
     height: 370px ;
     width: 370px;
     border: none;
@@ -470,9 +517,329 @@ footer h3{
     text-decoration: none;
     font-size: 22px;
     padding: 5px 10px 5px 10px;
-   
-    
+  
 }
 .fotmenu ul li a:hover{
     color: #e8bf5d;
+}
+
+
+@media all and (max-width:1550px){
+        .menu{
+        font-family: 'Cairo', sans-serif;
+        display: block;
+        margin: 0px 50px 0px 0px; 
+        }
+        .menu ul li a{
+            padding: 10px 8px 10px 8px;
+        }
+        .menu li a:hover{
+            border-bottom: 4px solid #e8bf5d ;
+            padding: 10px 8px 6px 10px;
+        }
+
+        .front > h2{
+            font-size: 45px;
+        }
+        .front > p{
+             font-size: 35px;
+        }
+        .front{
+            margin: 0px 0px 70px 400px;
+        }
+        .second_area{
+            margin: 0px 175px 0px 175px;
+            position: relative;
+            padding-top: 20px;
+        }
+        .first{ 
+                max-height: 100%;
+                margin: 30px 175px 0px 175px;
+                position: relative;
+        }
+        .second_text{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            position: relative;
+            padding-bottom:50px ;
+        }
+        .second_text_icon{
+            display: flex;
+            width: 40%;
+            justify-content: flex-end;
+            color: white;
+            margin: 0px 0px 0px 40px;   
+        }
+        .second_text_icon p{
+           padding: 0px 15px 0px 15px;
+        }
+        .second_text_icon img{
+            height: min-content;
+        
+           padding-top: 35px;   
+        }
+        .face_total{
+            display: flex;
+            margin-top:40px ;
+            flex-wrap: wrap;
+           margin-bottom: 40px;
+        }
+        
+        .face_text{
+            text-align: center;
+            width: 50%;
+            margin: 0px 0px 20px 0px;
+            padding-bottom: 0px;
+        }
+        .face{
+            margin: 0px;
+        }
+       
+}
+
+
+@media all and (max-width:1150px){
+        header h3{
+        margin: 25px 0px 25px 50px;
+        font-size: 25px; 
+        }
+        .front{
+            margin: 0px 0px 70px 150px;
+        }
+        
+        .second_area{
+            margin: 0px 90px 0px 90px;
+            position: relative;
+            padding-top: 20px;
+    }
+        .first{ 
+    
+        max-height: 100%;
+        margin: 30px 90px 0px 90px;
+        position: relative;
+    }
+        .second_text{
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: flex-start;
+        position: relative;
+        padding-bottom:50px ;
+    }
+    .face_total{
+        display: flex;
+        margin-top:40px ;
+        flex-wrap: wrap;
+       margin-bottom: 40px;
+    }
+    
+    .face_text{
+        text-align: center;
+        width: 50%;
+        margin: 0px 0px 20px 0px;
+        padding-bottom: 0px;
+    }
+    .practice_text::before{
+        display: none;
+        content: "\201C"; 
+        font-family: serif;
+        position: absolute;
+        left: -29px;
+        top: 5px;
+        color: #535251;
+        font-size: 80px;
+        
+    }
+    footer h3{
+        margin: 25px 0px 25px 50px;
+        font-size: 25px; 
+        }
+    .fotmenu{
+        margin: 0px 175px 0px 0px;
+    }
+
+}
+@media all and (max-width:1000px){
+    
+    .front{
+        margin: 0px 0px 70px 70px;
+    }
+    .second_text{
+        flex-wrap: wrap;
+    }
+    .second_text_icon{
+        width: 100%;
+    }
+    .practice_text{
+        margin: 0;
+        color: white;
+        padding: 0px 0px 0px 30px;
+        position: relative;
+        width: 55%;
+        text-align: center;
+    
+    }
+    .practice_text::before{
+       display: block;
+        content: "\201C"; 
+        font-family: serif;
+        position: absolute;
+        left: -29px;
+        top: 5px;
+        color: #535251;
+        font-size: 80px;
+    }
+    .practice{
+        display: flex;
+        flex-direction: row;
+        margin-top: 80px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+       margin-left: 90px;
+    }
+    .boy_smile{
+    
+        position: relative;
+        z-index: 1;
+        width: 100%;
+       justify-content: center;
+    }
+    .slide {
+        padding-right: 120px;
+    }
+    .fifth_text{
+        /* flex-wrap: wrap; */
+        display: block;
+        width: 46%;
+        padding: 20px 20px 70px 0px;
+    }
+    .sixth_total{
+        width: 100%;
+        
+    }
+    .six_gold_box{
+        width: 100%;
+        background-color: #e8bf5d;
+        padding: 30px 30px 30px 30px;
+        margin: 50px 10px 20px 10px;
+        line-height: 1.8em;
+    }
+    .six{
+        flex-wrap: wrap;
+        display: flex;
+        margin-top: 100px;
+        padding-bottom: 100px;
+    }
+    .seven{
+        display: flex;
+        flex-wrap: wrap-reverse;
+
+        width: 70%;
+        justify-content: center;
+        margin-top: 50px;
+        /* border:1px solid black; */
+        margin-left: 100px;
+        box-shadow: 5px 5px 5px 5px #f3f3f3;
+        margin-bottom: 50px;
+    
+    }
+    .seven_box{
+        display: block;
+        padding: 0px 20px 0px 0px;
+        padding-top: 40px;
+       margin: 50px 10px 50px 10px;
+        width: 70%;
+    }
+    .seven_btn{
+        margin-top:40px ;
+    }
+    .first_num img{
+        width: 140px;
+        height: 90px;
+    }
+    
+    
+}
+@media all and (max-width: 800px){
+     
+    header{
+        display: flex;
+      
+        justify-content: space-between;
+    }
+    .menu{
+        padding-left: 20px;
+        margin-right: 20px;
+    }
+   .menu ul{
+       justify-content: flex-end;
+       
+   }
+    .menu ul li a{
+        visibility: hidden; 
+        width: 0%;
+        padding: 0px;
+        
+    }
+
+    .menu ul li{
+         position: relative;
+        width: 15%;
+        
+    }
+    .menu ul li a i{
+        position: absolute;
+        visibility: visible;
+        font-size: 30px;
+        top: 15px;
+        left: 12px;
+        
+    }
+    .menu ul li a i:hover{
+        color: #e8bf5d;
+       
+      
+    }
+   
+
+    .fifth_text{
+        /* flex-wrap: wrap; */
+        display: block;
+        width: 100%;
+        padding: 0px 20px 40px 20px;
+        
+    }
+    .fifth_img img{
+        width: 100%;
+        padding: 10px 20px 20px 20px;
+     }
+}
+@media all and (max-width: 750px){
+   .con_btn{
+       margin: 0px 100px 80px 100px;}
+       
+    .front > h2{
+        font-size: 35px;
+    }
+    .front > p{
+         font-size: 25px;
+    }
+    .face_text{
+        text-align: center;
+        width: 100%;
+        margin: 0px 0px 20px 0px;
+        padding-bottom: 0px;
+    }
+     .first_text{ 
+         display: flex;
+        flex-direction: column;
+    }
+    .history{
+        width: 100%;
+        padding-bottom: 25px;
+    }
+    .expertise{
+        width: 100%;
+        padding: 0px;
+    }
 }
