@@ -11,6 +11,10 @@ header h3{
     margin-left: 200px; 
     font-size: 25px;
 }
+.bur{
+     display: none; 
+
+}
 .menu{
     font-family: 'Cairo', sans-serif;
      display: block; 
@@ -20,14 +24,15 @@ header h3{
 .menu ol{
     list-style: none;
 }
-.menu ul{
+.menu > ul{
     display: flex;
-    justify-content: center;
-    margin: 0px;
-    padding: 0px; 
+}
+.lol{
+    display: flex;
+    list-style: none;
 }
 
-.menu ul li a{
+.menu li a{
     display: block;
     text-transform: uppercase;
     color: black;
@@ -35,9 +40,11 @@ header h3{
     font-size: 15px;
     padding: 15px 30px 15px 30px;  
     
-}.menu ul li a i{
-    visibility: hidden;
-    width: 0%;
+}
+.menu > i{
+    /* visibility: hidden; */
+    /* width: 0%; */
+    display: none;
 }
 
 
@@ -101,12 +108,14 @@ header h3{
     line-height: 0.8em;
 }
 
-    .first{ 
+.first{ 
         
         max-height: 100%;
         margin: 30px 300px 0px 350px;
         position: relative;
     }
+.first .about_us > p{
+    color:#666666;}
 .first_text{
     display: flex;
     flex-direction: row;
@@ -116,6 +125,24 @@ header h3{
 .history{
     width: 50%;
 }
+.history > h3{
+    font-size: 26px;
+}
+.history .years > h3{
+    font-size: 26px;
+}
+.history .years > p3{
+    font-size:18px ;
+    font-family: 'Cairo', sans-serif; 
+}
+.first_text .expertise  h3{
+    font-size:26px ;
+     
+}
+.first_text .expertise > p{
+    font-size:15px ;
+    font-family: 'Cairo', sans-serif; 
+}
 .about_us{
    
     border-left: 3px solid #e8bf5d ;
@@ -123,11 +150,13 @@ header h3{
 .about_us h2{
     padding: 0px 0px 0px 25px;
     margin-top: 0px;
+    font-size: 37px;
     
 }
 .about_us p{
     padding: 0px 0px 0px 25px;
     margin-top: 0px;
+    font-size: 26px;
 }
 .years{
     margin: 20px 0px 10px 0px;
@@ -177,26 +206,41 @@ header h3{
 .second .about_us{
     color: white;
     margin-top: 35px;   
+   
 }
+.second .about_us > p{
+    color:#b9b9b9;}
 .second_text_icon{
     display: flex;
-    width: 40%;
+    width: 44%;
     justify-content: flex-end;
     color: white;
-    margin: 0px 0px 0px 80px;   
+    margin: 0px 0px 0px 50px;   
 }
-.second_text_icon p{
-   padding: 0px 30px 0px 30px;
+.second_text_hp{
+    padding-left: 20px;
+}
+.second_text_hp > h1{
+    margin: 0px;
+    font-size: 25px;
+     line-height: 2.5em;
+     margin-top: 20px;
+}
+
+.second_text_hp > p1{
+    margin: 0px;
+    font-size:15px;
+    font-family: 'Cairo', sans-serif; 
+  
 }
 .second_text_icon img{
-    height: min-content;
-
+height: min-content;
    padding-top: 35px;   
 }
 .second_text{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: space-around;
     position: relative;
     padding-bottom:50px ;
 }
@@ -209,6 +253,8 @@ header h3{
 .third .about_us{
     margin-top: 35px;  
 }
+.third .about_us > p{
+    color: #666666;}
 .face_total{
     display: flex;
     margin-top:40px ;
@@ -217,11 +263,25 @@ header h3{
 .face{
     margin: 20px 20px 20px 0px;
 }
+.face > img{
+    width: 100%;
+}
 .face_text{
     padding-bottom: 60px;
     width: 25%;
     margin: 0px 0px 20px 0px;
 }
+.face_text > h2{
+    font-size: 25px;
+    margin: 0px;
+    
+}
+.face_text > p3{
+    font-size:14px ;
+    font-family: 'Cairo', sans-serif;
+    margin: 0px;
+}
+
 .fourth{
     max-height: 100%;
     background-image:url(/Img/background_04.png);
@@ -233,23 +293,21 @@ header h3{
 .fourth .about_us{
     margin-top: 35px;  
 }
+.fourth .about_us > h2{
+    color: white;
+}
+.fourth .about_us > p{
+    color: #b9b9b9;}
 .boy_smile{
     
     position: relative;
-    z-index: 1;
+   
     width: 50%;
 }
-.gold_box{
-    height: 300px ;
-    width: 370px;
-    border: none;
-    background: #e8bf5d;
-    z-index: -1;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    
+.boy_smile img{
+    box-shadow: 12px 12px 2px 1px #e8bf5d;
 }
+
 .practice{
     display: flex;
     flex-direction: row;
@@ -265,9 +323,14 @@ header h3{
 
 }
 
-.practice_text p{
+.practice_text > p{
     padding-bottom: 30px;
+    font-size:15px ;
+    font-family: 'Cairo', sans-serif;
+    margin: 0px;
 }
+.practice_text > p1{font-size: 30px;}
+.practice_text > p2{font-size:23px ;}
 .practice_text::before{
     content: "\201C"; 
     font-family: serif;
@@ -321,13 +384,23 @@ header h3{
 .fifth .about_us{
     margin-top: 35px;  
 }
+.fifth .about_us > p{
+    color: #666666;
+}
 .fifth_text{
     /* flex-wrap: wrap; */
     display: block;
     width: 30%;
     padding: 20px 20px 70px 0px;
 }
-
+.fifth_text > p{
+    font-size: 25px;
+}
+.fifth_text > p1{
+    font-size:16px ;
+    font-family: 'Cairo', sans-serif; 
+    
+}
 .fifth_total{
     width: 100%;
     display: flex; 
@@ -335,16 +408,22 @@ header h3{
     flex-wrap: wrap;
     
 }
-table.lrtext {
+.lrtext {
     width: 100%;
     border-spacing: 0;
+    padding-bottom: 20px;
 }
-table.lrtext td {
+.lrtext td {
     width: 50%; 
     vertical-align: top;
+    font-size:16px;
+    font-family: 'Cairo', sans-serif; 
 }
 td.rtext{
     text-align: right;
+    font-size:14px ;
+    font-family: 'Cairo', sans-serif; 
+    font-style: italic;
 }
 
 .comments ul,
@@ -374,6 +453,13 @@ td.rtext{
 }
 .sixth .about_us{
     margin-top: 35px;  
+}
+.sixth .about_us > h2{
+    color: white;
+    margin-top: 35px;  
+}
+.sixth .about_us > p{
+    color: #b9b9b9;
 }
 .sixth_total ul li a{
     color: white;
@@ -414,7 +500,7 @@ td.rtext{
     
 }
 .mail_text1 input{
-
+    /* vertical-align: top; */
     border: none;
      width: 100%; 
     font-style: italic;
@@ -436,6 +522,7 @@ td.rtext{
     margin-bottom: 50px;
 
 }
+
 .seven_box{
     display: block;
     padding: 0px 20px 0px 50px;
@@ -481,7 +568,9 @@ td.rtext{
 .seventh .about_us{
     margin-top: 35px;  
 }
-
+.seventh .about_us > p{
+    color: #666666;
+}
 footer{
     display: flex;
     align-items: center;
@@ -661,6 +750,52 @@ footer h3{
 }
 @media all and (max-width:1000px){
     
+    .menu > ul{
+        display: none;
+    }
+    .menu li a:hover{
+        border-bottom: 4px solid #e8bf5d ;
+        padding: 15px 30px 11px 30px;
+    }
+    
+    .dropdown {
+       
+        position: relative;
+        display: inline-block;
+      }
+    .bur{
+        display: block;
+        width: 170px;
+        height: 75px;
+        margin-top: 10px;
+       
+        border:none ;
+        border-radius: 15px;
+        background-color:#e8bf5d ;
+    }
+    .lol {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        border-bottom: 0px;
+      }
+      .lol a {
+        color: black;
+        border-bottom: 0px;
+        text-decoration: none;
+        display: block;
+        
+      }
+     
+
+    .lol a:hover {background-color: #ddd; }
+    .dropdown:hover .lol {display: block;}
+    .dropdown:hover .bur {background-color: wheat;}
+    
     .front{
         margin: 0px 0px 70px 70px;
     }
@@ -762,44 +897,6 @@ footer h3{
 }
 @media all and (max-width: 800px){
      
-    header{
-        display: flex;
-      
-        justify-content: space-between;
-    }
-    .menu{
-        padding-left: 20px;
-        margin-right: 20px;
-    }
-   .menu ul{
-       justify-content: flex-end;
-       
-   }
-    .menu ul li a{
-        visibility: hidden; 
-        width: 0%;
-        padding: 0px;
-        
-    }
-
-    .menu ul li{
-         position: relative;
-        width: 15%;
-        
-    }
-    .menu ul li a i{
-        position: absolute;
-        visibility: visible;
-        font-size: 30px;
-        top: 15px;
-        left: 12px;
-        
-    }
-    .menu ul li a i:hover{
-        color: #e8bf5d;
-       
-      
-    }
    
 
     .fifth_text{
